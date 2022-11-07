@@ -13,7 +13,7 @@ html{
     padding: 0;
 }
 
-main{
+main, .footer{
     margin: 0px 250px 0px 250px;
 }
 
@@ -265,4 +265,20 @@ a .island, a .notre{
 .active-wrap{
     display: flex;
     flex-direction: column;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #F2F2F2;
+    padding: 25px;
+    max-width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.column a{
+    margin: 5px;
+    padding: 10px;
 }
