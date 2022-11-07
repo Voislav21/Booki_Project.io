@@ -1,0 +1,268 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url(CSS/Assets/Fonts/Raleway.ttf);
+}
+
+html{
+    font-family: 'Raleway';
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    margin: 0px 250px 0px 250px;
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+   
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    
+}
+
+.nav-links ul li a{
+    text-decoration: none;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+.header{
+    margin: 1px;
+    font-size: xx-large;
+}
+
+.search-form{
+    display: inline-flex;
+    justify-content: space-evenly;
+    max-width: 100%;
+    align-items: stretch;
+    margin-top: 30px;
+}
+
+.search-icon{
+    background-color: #F2F2F2;
+    padding: 16px 20px;
+    border-radius: 15px 0 0 15px;
+    text-align: center;
+}
+
+.search-box{
+    border-right: none;
+    border-left: none;
+    border-top: #F2F2F2 2px solid;
+    border-bottom: #F2F2F2 2px solid;
+    padding: 0 15px;
+    width: 230px;
+}
+
+.button-submit{
+    background-color: #0065FC;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 0 15px 15px 0;
+    padding: 16px 20px;
+}
+
+.filters{
+    display: flex;
+    max-width: 60%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    border: none;
+}
+
+.button-icon{
+    background-color: #DEEBFF;
+    padding: 16px;
+    border-radius: 150px;
+    color: #0065FC;
+}
+
+.buttons{ 
+    border: none;
+    border-top: #F2F2F2 2px solid;
+    border-bottom: #F2F2F2 2px solid;
+    border-right: #F2F2F2 2px solid;
+    border-radius: 150px;
+    padding: 16px 16px 16px 0;
+    background-color: white;
+}
+
+.buttons:hover{
+    background-color: #DEEBFF;
+    transition: 0.2s;
+    box-shadow: 2px 2px 2px #dddada;
+    cursor: pointer;
+}
+
+.buttons:focus{
+    background-color:  #DEEBFF;
+    font-weight: bold;
+}
+
+.button-text{
+    padding-left: 10px;
+}
+
+.info{
+    margin-top: 30px;
+}
+
+.two-containers{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.card-container, .aside{
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    padding: 25px;
+    max-width: 850px;
+}
+
+.card-container h3, .card-container p{
+    text-indent: 25px;
+}
+
+.card_section{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card, .aside-card{
+    border-radius: 20px;
+    background-color: white;
+    margin: 15px;
+    padding: 3px;
+    box-shadow: 5px 5px 5px 5px #dddada;
+}
+
+.aside-cards{
+    max-width: 350px;
+    max-height: 250px;
+}
+
+.aside-card a{
+    display: flex;
+}
+
+.card-titles{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.card img{
+    border-radius: 20px 20px 0 0;
+    min-width: 225px;
+    height: 125px;
+    object-fit: cover;
+    padding: 3px;
+}
+
+.card h4, .card p, .aside-card h4, .aside-card p{
+    text-indent: 15px;
+}
+
+.card:hover, .aside-card:hover, .activity-card:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.stars{
+    font-size: 10px;
+    padding-left: 15px;
+    color: #0065FC;
+}
+
+.aside img{
+    border-radius: 20px 0 0 20px;
+    min-width: 100px;
+    height: 100px;
+    object-fit: cover;
+    padding: 3px;
+}
+
+.aside-cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.align-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Activities{
+    margin-top: 50px;
+}
+
+.activity-cards{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+a .old, a .cal{
+    border-radius: 20px 20px 0 0;
+    width: 300px;
+    height: 415px;
+    object-fit: cover;
+}
+
+a .fort, a .long{
+    border-radius: 20px 20px 0 0;
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+
+a .island, a .notre{
+    border-radius: 20px 20px 0 0;
+    width: 300px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.activity-card{
+    background-color: white;
+    border-radius: 20px 20px 20px 20px;
+    margin: 15px;
+    box-shadow: 5px 5px 5px 5px #dddada;
+    object-fit: cover;
+    padding-bottom: 15px;
+}
+
+.active-wrap{
+    display: flex;
+    flex-direction: column;
+}
