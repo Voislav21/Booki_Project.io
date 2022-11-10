@@ -24,13 +24,16 @@ h3 {
 }
 /*End -- Common stylings */
 
-nav, main, footer{
-    max-width: 80%;
+/* Layout stylings */
+nav, main, footer {
+    max-width: 1400px;
     padding: 0 20px;
     margin: auto;
 }
+/* END -- Layout stylings */
 
-nav{
+/* Navigation stylings */
+nav {
     display: flex;
     padding: 40px 20px;
     justify-content: space-between;
@@ -55,8 +58,10 @@ nav{
 .nav-links ul li a{
     text-decoration: none;
 }
+/* END -- Navigation stylings */
 
-.search-form{
+/* Header container styling */
+.search-form {
     display: inline-flex;
     justify-content: space-evenly;
     max-width: 100%;
@@ -97,6 +102,14 @@ nav{
     border: none;
 }
 
+.filters h2 {
+    margin-right: 30px;
+}
+
+.filters button {
+    margin-right: 20px;
+}
+
 .button-icon{
     background-color: #DEEBFF;
     padding: 16px;
@@ -134,152 +147,316 @@ nav{
     margin-top: 30px;
 }
 
-.two-containers{
+.info i {
+    margin-right: 10px;
+}
+/* END -- Header container styling */
+
+/* Accomodation container styling */
+.two-containers {
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
 }
 
-.card-container, .aside{
+.card {
+    width: 31%;
+}
+
+.card-container {
+    width: 66%;
+}
+
+.aside {
+    width: 30%;
+}
+
+.card-container, .aside {
     background-color: #F2F2F2;
     border-radius: 20px;
-    padding: 25px;
-    max-width: 850px;
+    padding: 45px 25px;
 }
 
-.card-container h3, .card-container p{
-    text-indent: 25px;
+.card-container h3, .aside h3 {
+    margin: 0 0 30px;
 }
 
-.card_section{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.card, .aside-card{
-    border-radius: 20px;
-    background-color: white;
-    margin: 15px;
-    padding: 3px;
-    box-shadow: 5px 5px 5px 5px #dddada;
-}
-
-.aside-cards{
-    max-width: 350px;
-    max-height: 250px;
-}
-
-.aside-card a{
-    display: flex;
-}
-
-.card-titles{
-    display: flex;
-    flex-flow: row wrap;
-}
-
-.card img{
-    border-radius: 20px 20px 0 0;
-    min-width: 225px;
-    height: 125px;
-    object-fit: cover;
-    padding: 3px;
-}
-
-.card h4, .card p, .aside-card h4, .aside-card p{
-    text-indent: 15px;
-}
-
-.card:hover, .aside-card:hover, .activity-card:hover{
-    transform: scale(1.1);
-    transition: 0.5s;
-    cursor: pointer;
-}
-
-.stars{
-    font-size: 10px;
-    padding-left: 15px;
-    color: #0065FC;
-}
-
-.aside img{
-    border-radius: 20px 0 0 20px;
-    min-width: 100px;
-    height: 100px;
-    object-fit: cover;
-    padding: 3px;
-}
-
-.aside-cards{
+.card-titles {
+    padding: 15px 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.align-header{
+.card_section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card, .aside-card {
+    border-radius: 20px;
+    background-color: white;
+    margin: 0 15px 30px 0;
+    padding: 3px;
+    box-shadow: 5px 5px 5px 5px #dddada;
+}
+
+.aside-card:last-child {
+    margin: 0;
+}
+
+.card-bottom {
+    padding: 5px 10px 10px;
+}
+
+.card-bottom p {
+    margin: 5px 0 8px;
+}
+
+.aside-card {
+    display: flex;
+}
+
+.aside-card img {
+    height: 150px;
+    border-radius: 20px 0 0 20px;
+    width: 45%;
+    min-width: 45%;
+    object-fit: cover;
+    padding: 3px;
+}
+
+.aside-card a {
+    display: flex;
+}
+
+.image-wrapper {
+    overflow: hidden;
+    margin: 0 3px 0 0;
+    border-radius: 20px 20px 0 0;
+}
+
+.card img {
+    border-radius: 20px 20px 0 0;
+    min-width: 225px;
+    width: 100%;
+    height: 135px;
+    object-fit: cover;
+    padding: 3px;
+}
+
+.card, .aside-card, .activity-card {
+    transition: 0.5s;
+}
+
+.card:hover, .aside-card:hover, .activity-card:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.stars {
+    font-size: 10px;
+    color: #0065FC;
+}
+
+.aside-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.align-header {
     display: flex;
     justify-content: space-between;
 }
 
-.Activities{
+.show-more {
+    margin: 10px 0 0;
+    font-weight: 700;
+}
+/* END -- Accomodation container styling */
+
+/* Activites section stylings */
+.activities {
     margin-top: 50px;
 }
 
-.activity-cards{
+.activity-cards {
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 
 
-a .old, a .cal{
+a .old, a .cal {
     border-radius: 20px 20px 0 0;
-    width: 300px;
-    height: 415px;
+    width: 100%;
+    height: 440px;
     object-fit: cover;
 }
 
-a .fort, a .long{
+a .fort, a .long {
     border-radius: 20px 20px 0 0;
-    width: 300px;
+    width: 100%;
     height: 200px;
     object-fit: cover;
 }
 
-a .island, a .notre{
+a .island, a .notre {
     border-radius: 20px 20px 0 0;
-    width: 300px;
+    width: 100%;
     height: 150px;
     object-fit: cover;
 }
 
-.activity-card{
+.activity-card {
     background-color: white;
     border-radius: 20px 20px 20px 20px;
     margin: 15px;
     box-shadow: 5px 5px 5px 5px #dddada;
     object-fit: cover;
     padding-bottom: 15px;
+    width: 22.5%;
 }
 
-.active-wrap{
+.activity-card h4 {
+    padding: 15px 15px 5px;
+}
+
+.active-wrap {
+    width: 25%;
     display: flex;
     flex-direction: column;
 }
 
-.footer{
+.active-wrap .activity-card {
+    width: calc(100% - 30px);
+}
+
+/* END -- Accomodation section stylings */
+
+/* Footer stylings */
+footer {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    background-color: #F2F2F2;
     padding: 25px;
-    max-width: 100%;
+    width: 100%;
     margin-top: 50px;
     margin-bottom: 50px;
 }
 
-.column a{
+.footer-container {
+    background-color: #F2F2F2;
+}
+
+.column {
+    width: 30%;
+}
+
+.column h4 {
+    font-weight: 700;
+}
+
+.column a {
     margin: 5px;
     padding: 10px;
+}
+/* END -- Footer stylings */
+
+@media(max-width: 1400px) {
+    /* Activites container stylings */
+    .activity-cards {
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+
+    .activity-card {
+        width: 47.5%;
+    }
+
+    .active-wrap {
+        width: 47.5%;
+    }
+
+    .active-wrap .activity-card {
+        width: 100%;
+    }
+    /* END -- Activites container stylings */
+}
+
+@media(max-width: 1200px) {
+    /* Accomodation container stylings */
+    .card {
+        width: 46%;
+    }
+    /* END -- Accomodation container stylings */
+}
+
+@media(max-width: 980px) {
+    /* Footer stylings */
+    footer {
+        flex-direction: column;
+    }
+
+    .column {
+        width: 100%;
+    }
+    /* END -- Footer stylings */
+}
+
+@media(max-width: 750px) {
+    /* Header container styling */
+    .filters h2 {
+        width: 100%;
+        margin: 0 0 10px 0;
+    }
+
+    .buttons {
+        width: 50%;
+        text-align: left;
+        margin: 0 0 10px 0;
+    }
+    /* END -- Header container styling */
+
+    /* Activites container stylings */
+    .two-containers {
+        flex-direction: column;
+    }
+
+    .card-container {
+        width: 100%;
+        margin: 0 0 50px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .aside {
+        width: 100%;
+    }
+
+    .card, .aside-card {
+        margin: 0 0 30px 0;
+    }
+    
+    .aside-card:last-child {
+        margin: 0;
+    }
+
+    .activity-card {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .active-wrap {
+        width: 100%;
+    }
+
+    .active-wrap .activity-card {
+        width: calc(100% - 30px);
+    }
+    /* END -- Activites container stylings */
 }
