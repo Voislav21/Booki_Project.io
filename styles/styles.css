@@ -1,7 +1,3 @@
-@font-face {
-    font-family: 'Raleway';
-    src: url(CSS/Assets/Fonts/Raleway.ttf);
-}
 
 /* Common stylings */
 html{
@@ -26,7 +22,7 @@ h1 {
 h3 {
     font-size: 24px;
 }
-/* END -- Common stylings */
+/*End -- Common stylings */
 
 /* Layout stylings */
 nav, main, footer {
@@ -45,7 +41,7 @@ nav {
     flex-direction: row;
 }
 
-.nav-links {
+.nav-links{
     flex: 1;
     text-align: right;
    
@@ -89,7 +85,7 @@ nav {
     width: 230px;
 }
 
-.button-submit {
+.button-submit{
     background-color: #0065FC;
     color: white;
     font-weight: bold;
@@ -98,7 +94,7 @@ nav {
     padding: 16px 20px;
 }
 
-.filters {
+.filters{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -114,14 +110,14 @@ nav {
     margin-right: 20px;
 }
 
-.button-icon {
+.button-icon{
     background-color: #DEEBFF;
     padding: 16px;
     border-radius: 150px;
     color: #0065FC;
 }
 
-.buttons { 
+.buttons{ 
     border: none;
     border-top: #F2F2F2 2px solid;
     border-bottom: #F2F2F2 2px solid;
@@ -131,23 +127,23 @@ nav {
     background-color: white;
 }
 
-.buttons:hover {
+.buttons:hover{
     background-color: #DEEBFF;
     transition: 0.2s;
     box-shadow: 2px 2px 2px #dddada;
     cursor: pointer;
 }
 
-.buttons:focus {
+.buttons:focus{
     background-color:  #DEEBFF;
     font-weight: bold;
 }
 
-.button-text {
+.button-text{
     padding-left: 10px;
 }
 
-.info {
+.info{
     margin-top: 30px;
 }
 
