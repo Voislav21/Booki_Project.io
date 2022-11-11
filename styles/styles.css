@@ -416,7 +416,7 @@ footer {
     
     /* Accomodation container stylings */
     .card {
-        width: 45%;
+        width: 27%;
     }
     /* END -- Accomodation container stylings */
 }
@@ -431,8 +431,16 @@ footer {
         margin: 0 0 50px;
     }
 
+    .card{
+        width: 45%;
+    }
+
     .aside{
         width: 100%;
+    }
+
+    .aside-card{
+        height: 250px;
     }
 
     /* Footer stylings */
@@ -482,9 +490,17 @@ footer {
     .card, .aside-card {
         margin: 0 0 30px 0;
     }
+
+    .aside-card{
+        width: 100%;
+    }
     
     .aside-card:last-child {
         margin: 0;
+    }
+
+    .aside-cards{
+        flex-direction: column;
     }
 
     .activity-card {
