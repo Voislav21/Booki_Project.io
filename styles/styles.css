@@ -348,7 +348,9 @@ footer {
 }
 
 .footer-container {
+    margin: 0 50px 0 50px;
     background-color: #F2F2F2;
+    
 }
 
 .column {
@@ -389,7 +391,7 @@ footer {
 @media(max-width: 1200px) {
     /* Accomodation container stylings */
     .card {
-        width: 46%;
+        width: 45%;
     }
     /* END -- Accomodation container stylings */
 }
