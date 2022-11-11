@@ -424,7 +424,6 @@ footer {
 @media(max-width: 992px) {
     .buttons{
         margin: 3px;
-        text-align: center;
     }
     .two-containers{
         flex-direction: column;
