@@ -58,6 +58,11 @@ nav {
 .nav-links ul li a{
     text-decoration: none;
 }
+
+.nav-links a:hover{
+    text-decoration: overline #0065FC 3px;
+    
+}
 /* END -- Navigation stylings */
 
 /* Header container styling */
@@ -145,10 +150,16 @@ nav {
 
 .info{
     margin-top: 30px;
+    justify-content: center;
 }
 
 .info i {
     margin-right: 10px;
+    color: #0065FC;
+    padding: 15px 15px 15px 15px;
+    border-radius: 25px;
+    background-color: white;
+    border: 1px solid black
 }
 /* END -- Header container styling */
 
@@ -274,6 +285,12 @@ nav {
 .show-more {
     margin: 10px 0 0;
     font-weight: 700;
+    cursor: pointer;
+}
+
+.show-more:hover{
+    color: #0065FC;
+    text-decoration: underline;
 }
 /* END -- Accomodation container styling */
 
@@ -359,11 +376,17 @@ footer {
 
 .column h4 {
     font-weight: 700;
+    text-decoration: underline;
 }
 
 .column a {
     margin: 5px;
     padding: 10px;
+}
+
+.column a:hover{
+    text-decoration: underline;
+    animation-duration: 500ms;
 }
 /* END -- Footer stylings */
 
@@ -460,13 +483,47 @@ footer {
 
 @media(max-width: 768px) {
     /* Header container styling */
+
+    .nav-links{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .nav-links a:hover{
+        text-decoration: underline #0065FC 3px;
+    }
+
+    .nav-links img{
+        padding-left: 22%;
+    }
+
+    .top-section p{
+        display: flex;
+        justify-content: center;
+    }
+
+    .top-section h1{
+        padding-left: 20%;
+    }
+
+    .search-form{
+        display: flex;
+        justify-content: center;
+    }
+
+    .filters{
+        justify-content: center;
+    }
+
     .filters h2 {
-        width: 100%;
+        display: flex;
         margin: 0 0 10px 0;
+        width: 100%;
+        justify-content: center;
     }
 
     .buttons {
-        width: 75%;
+        width: 50%;
         text-align: left;
         margin: 0 0 10px 0;
     }
@@ -522,6 +579,11 @@ footer {
 
     .active-wrap .activity-card {
         width: calc(100% - 30px);
+    }
+
+    .column h4, .column p{
+        display: flex;
+        justify-content: center;
     }
     /* END -- Activites container stylings */
 }
