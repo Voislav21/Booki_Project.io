@@ -156,7 +156,7 @@ nav {
 .info i {
     margin-right: 10px;
     color: #0065FC;
-    padding: 15px 15px 15px 15px;
+    padding: 17px 15px 17px 15px;
     border-radius: 25px;
     background-color: white;
     border: 1px solid black
@@ -213,9 +213,7 @@ nav {
     box-shadow: 5px 5px 5px 5px #dddada;
 }
 
-.aside-card:last-child {
-    margin: 0;
-}
+
 
 .card-bottom {
     padding: 5px 10px 10px;
@@ -227,7 +225,7 @@ nav {
 
 .aside-card {
     display: flex;
-    max-width: 95%;
+    max-width: 100%;
 }
 
 .aside-card img {
@@ -286,6 +284,7 @@ nav {
     margin: 10px 0 0;
     font-weight: 700;
     cursor: pointer;
+    width: fit-content;
 }
 
 .show-more:hover{
@@ -371,22 +370,28 @@ footer {
 }
 
 .column {
+    display: flex;
+    flex-direction: column;
     width: 30%;
 }
 
 .column h4 {
     font-weight: 700;
     text-decoration: underline;
+    padding-bottom: 7px;
 }
 
 .column a {
-    margin: 5px;
-    padding: 10px;
+    padding: 5px 5px 5px 0;
+    max-width: fit-content;
+}
+
+.column a:last-child{
+    padding-bottom: 20px;
 }
 
 .column a:hover{
     text-decoration: underline;
-    animation-duration: 500ms;
 }
 /* END -- Footer stylings */
 
@@ -411,7 +416,7 @@ footer {
 
     .aside-card{
         flex-direction: column;
-        height: 95%;
+        height: 100%;
         width: 80%;
     }
 
@@ -444,7 +449,7 @@ footer {
     /* END -- Accomodation container stylings */
 }
 
-@media(max-width: 992px) {
+@media(max-width: 1050px) {
     .buttons{
         margin: 3px;
     }
@@ -554,10 +559,6 @@ footer {
     .aside-card{
         width: 100%;
     }
-    
-    .aside-card:last-child {
-        margin: 0;
-    }
 
     .aside-cards{
         flex-direction: column;
@@ -581,9 +582,9 @@ footer {
         width: calc(100% - 30px);
     }
 
-    .column h4, .column p{
+    .column {
         display: flex;
-        justify-content: center;
+        align-items: center;
     }
     /* END -- Activites container stylings */
 }
