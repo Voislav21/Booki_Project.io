@@ -588,3 +588,15 @@ footer {
     }
     /* END -- Activites container stylings */
 }
+
+@media(max-width: 430px){
+    
+    .buttons{
+        width: 80%;
+    }
+
+    .column{
+        display: flex;
+        align-items: baseline;
+    }
+}
