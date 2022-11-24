@@ -16,7 +16,7 @@
 <body>
     <header>
         <nav class="nav-links">
-            <a href="index.html"><img src="images/logo/Booki.png" alt="booki logo"></a> 
+            <img src="images/logo/Booki.png" alt="booki logo"> 
                 <ul>
                     <li> <a href="#accommodationLink">Accommodations</a> </li>
                     <li> <a href="#activitiesLink">Activities</a> </li>
@@ -34,48 +34,87 @@
                         <i class="fas fa-solid fa-location-dot"></i>
                     </span>
                     <input class="search-box" type="search" name="search" placeholder="Marseille, France">
-                    <span><button class="button-submit" type="submit">Search</button></span>
+                    <span><button class="button-submit" type="submit"><p>Search</p><i class="fa-solid fa-magnifying-glass"></i></button></span>
                 </form>
                 <div class="filters">
                     <h2>Filters</h2>
-                    <button type="button" class="buttons">
-                        <span class="button-icon">
-                            <i class="fa fa-money-bill-wave"></i>
-                        </span>
-                        <span class="button-text">
-                        </span>Low Cost
-                    </button>
-                    <button type="button" class="buttons">
-                        <span class="button-icon">
-                            <i class="fa fa-child-reaching fa-lg"></i>
-                        </span>
-                        <span class="button-text">
-                            Family-Friendly
-                        </span> 
-                    </button>
-                    <button type="button" class="buttons">
-                        <span class="button-icon">
-                            <i class="fa fa-heart"></i>
-                        </span>
-                        <span class="button-text">
-                            Romantic
-                        </span>
-                    </button>
-                    <button type="button" class="buttons">
-                        <span class="button-icon">
-                            <i class="fa fa-dog"></i>
-                        </span>
-                        <span class="button-text">
-                            Pets Allowed
-                        </span>
-                    </button>
+                    <div class="arrange-buttons">
+                        <button type="button" class="buttons">
+                            <span class="button-icon">
+                                <i class="fa fa-money-bill-wave"></i>
+                            </span>
+                            <span class="button-text">
+                                Low Cost
+                            </span>
+                        </button>
+                        <button type="button" class="buttons">
+                            <span class="button-icon">
+                                <i class="fa fa-child-reaching fa-lg"></i>
+                            </span>
+                            <span class="button-text">
+                                Family-Friendly
+                            </span> 
+                        </button>
+                        <button type="button" class="buttons">
+                            <span class="button-icon">
+                                <i class="fa fa-heart"></i>
+                            </span>
+                            <span class="button-text">
+                                Romantic
+                            </span>
+                        </button>
+                        <button type="button" class="buttons">
+                            <span class="button-icon">
+                                <i class="fa fa-dog"></i>
+                            </span>
+                            <span class="button-text">
+                                Pets Allowed
+                            </span>
+                        </button>
+                    </div>
+                    <div class="arrange-buttons-mobile">
+                        <button type="button" class="buttons">
+                            <span class="button-icon">
+                                <i class="fa fa-money-bill-wave"></i>
+                            </span>
+                            <span class="button-text">
+                                Low Cost
+                            </span>
+                        </button>
+                        <button type="button" class="buttons">
+                            <span class="button-icon">
+                                <i class="fa fa-heart"></i>
+                            </span>
+                            <span class="button-text">
+                                Romantic
+                            </span>
+                        </button>
+                        <button type="button" class="buttons">
+                            <span class="button-icon">
+                                <i class="fa fa-child-reaching fa-lg"></i>
+                            </span>
+                            <span class="button-text">
+                                Family-Friendly
+                            </span> 
+                        </button>
+                        <button type="button" class="buttons">
+                            <span class="button-icon">
+                                <i class="fa fa-dog"></i>
+                            </span>
+                            <span class="button-text">
+                                Pets Allowed
+                            </span>
+                        </button>
+                    </div>
                 </div>
-                <p class="info" >
-                    <i class="fa-solid fa-info fa-lg"></i>More than 500 accommodations are available in this city</p>
+                <div class="info">
+                    <i class="fa fa-circle-info"></i>
+                    <p>More than 500 accommodations are available in this city</p>
+                </div>
         </section>
         <div class="two-containers" id="accommodationLink">
             <section class="card-container">
-                <h3>Accommodatin in Marseille</h3>
+                <h3>Accommodations in Marseille</h3>
                 <section class="card_section">
                     <a href="#" class="card">
                         <div class="image-wrapper"> 
@@ -89,7 +128,7 @@
                                 <i class="fas fa-solid fa-star"></i>
                                 <i class="fas fa-solid fa-star"></i>
                                 <i class="fas fa-solid fa-star"></i>
-                                <i class="far fa-regular fa-star"></i>
+                                <i class="fas fa-star grey"></i>
                             </div>
                         </div>
                     </a>
@@ -121,7 +160,7 @@
                                 <i class="fas fa-solid fa-star"></i>
                                 <i class="fas fa-solid fa-star"></i>
                                 <i class="fas fa-solid fa-star"></i>
-                                <i class="far fa-regular fa-star"></i>
+                                <i class="fas fa-regular fa-star grey"></i>
                             </div>
                         </div>
                     </a>
@@ -136,8 +175,8 @@
                                 <i class="fas fa-solid fa-star"></i>
                                 <i class="fas fa-solid fa-star"></i>
                                 <i class="fas fa-solid fa-star"></i>
-                                <i class="far fa-regular fa-star"></i>
-                                <i class="far fa-regular fa-star"></i>
+                                <i class="fas fa-regular fa-star grey"></i>
+                                <i class="fas fa-regular fa-star grey"></i>
                             </div>
                         </div>    
                     </a>
@@ -153,7 +192,7 @@
                                 <i class="fas fa-solid fa-star"></i>
                                 <i class="fas fa-solid fa-star"></i>
                                 <i class="fas fa-solid fa-star"></i>
-                                <i class="far fa-regular fa-star"></i>
+                                <i class="fas fa-regular fa-star grey"></i>
                             </div>
                         </div>
                     </a>
@@ -203,7 +242,7 @@
                                 <i class="fas fa-solid fa-star"></i>
                                 <i class="fas fa-solid fa-star"></i>
                                 <i class="fas fa-solid fa-star"></i>
-                                <i class="far fa-star"></i>
+                                <i class="fas fa-star grey"></i>
                             </div>
                         </div>
                     </a>
@@ -217,7 +256,7 @@
                                 <i class="fas fa-solid fa-star"></i>
                                 <i class="fas fa-solid fa-star"></i>
                                 <i class="fas fa-solid fa-star"></i>
-                                <i class="far fa-star"></i>
+                                <i class="fas fa-star grey"></i>
                             </div>
                         </div>
                     </a>
@@ -226,7 +265,7 @@
         </div>
 
         <section class="activities" id="activitiesLink">
-            <h3>Activities</h3>
+            <h3>Activities in Marseille</h3>
             <section class="activity-cards">
                 <a href="#" class="activity-card">
                     <img class="old" src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Old Port">

@@ -41,27 +41,20 @@ nav {
     flex-direction: row;
 }
 
-.nav-links{
-    flex: 1;
-    text-align: right;
-   
+.nav-links ul{
+    display: flex;
 }
 
 .nav-links ul li {
     list-style: none;
-    display: inline-block;
     padding: 8px 12px;
-    position: relative;
-    
 }
 
-.nav-links ul li a{
-    text-decoration: none;
-}
 
 .nav-links a:hover{
-    text-decoration: overline #0065FC 3px;
-    
+    text-decoration: underline #0065FC 3px;
+    text-underline-offset: -60px;
+    color: #0065FC;
 }
 /* END -- Navigation stylings */
 
@@ -99,6 +92,10 @@ nav {
     padding: 16px 20px;
 }
 
+.button-submit i{
+    display: none;
+}
+
 .filters{
     display: flex;
     flex-wrap: wrap;
@@ -113,6 +110,10 @@ nav {
 
 .filters button {
     margin-right: 20px;
+}
+
+.arrange-buttons-mobile{
+    display: none;
 }
 
 .button-icon{
@@ -150,16 +151,18 @@ nav {
 
 .info{
     margin-top: 30px;
-    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .info i {
     margin-right: 10px;
-    color: #0065FC;
-    padding: 17px 15px 17px 15px;
-    border-radius: 25px;
-    background-color: white;
-    border: 1px solid black
+    color: white;
+    background-color: #0065FC;
+    border-radius: 15px;
+    font-size: x-large;
+    border: solid #F2F2F2 2px;
 }
 /* END -- Header container styling */
 
@@ -270,6 +273,11 @@ nav {
     color: #0065FC;
 }
 
+.grey{
+    color: #dddada;
+
+}
+
 .aside-cards {
     display: flex;
     flex-direction: column;
@@ -360,25 +368,23 @@ footer {
     padding: 25px;
     width: 100%;
     margin-top: 50px;
-    margin-bottom: 50px;
 }
 
 .footer-container {
-    margin: 0 50px 0 50px;
     background-color: #F2F2F2;
+    padding: 0 20px;
     
 }
 
 .column {
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: 100%;
 }
 
 .column h4 {
     font-weight: 700;
-    text-decoration: underline;
-    padding-bottom: 7px;
+    padding-bottom: 10px;
 }
 
 .column a {
@@ -398,12 +404,12 @@ footer {
 @media(max-width: 1200px) {
     /* Activites container stylings */
     .two-containers{
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .card-container{
         width: 100%;
-        margin: 0 0 50px;
+        margin: 50px 0 50px;
     }
 
     .aside{
@@ -454,16 +460,22 @@ footer {
         margin: 3px;
     }
     .two-containers{
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .card-container{
         width: 100%;
-        margin: 0 0 50px;
+        margin: 50px 0 50px;
     }
 
     .card{
         width: 45%;
+    }
+
+    .card-titles{
+        display: flex;
+        height: 55%;
+        align-content: space-between;
     }
 
     .aside{
@@ -479,89 +491,169 @@ footer {
         flex-direction: column;
     }
 
-    .column {
-        width: 100%;
+    .column{
+        display: flex;
+        align-items: flex-start;
     }
 
     /* END -- Footer stylings */
 }
 
-@media(max-width: 768px) {
+@media(max-width: 778px) {
     /* Header container styling */
 
-    .nav-links{
-        flex-direction: column;
-        justify-content: center;
+    main{
+        padding: 0;
+    }
+
+    .top-section, .activities, .footer-container{
+        padding: 0 20px;
+    }
+
+    .search-box, .button-text{
+        font-weight: bold;
+    }
+
+    nav{
+    flex-direction: column;
+    align-items: stretch;
+    padding-left: 0;
+    padding-right: 0;
+    }
+
+    nav img{
+        align-self: center;
+        max-width: 30%;
+        padding-bottom: 20px;
+        margin-left: 55px;
+    }
+
+    .nav-links ul{
+        max-width: 100%;
+        display: flex;
+        border-bottom: solid 3px #F2F2F2;
+        padding: 0 20px 10px 20px;
+    }
+
+    .nav-links li{
+        align-items: center;
+        text-align: center;
+        width: 100%;
     }
 
     .nav-links a:hover{
         text-decoration: underline #0065FC 3px;
+        text-underline-offset: 22px;
+        width: 100%;
+    }
+    
+    /* END -- Header container styling */
+
+    /*Top-Section-Styling */
+
+    .button-submit p{
+        display: none;
     }
 
-    .nav-links img{
-        padding-left: 22%;
+    .button-submit i{
+        display: contents;
     }
 
-    .top-section p{
+    .button-submit{
+        border-radius: 15px;
+        width: 95%;
+        height: 100%;
         display: flex;
         justify-content: center;
     }
 
-    .top-section h1{
-        padding-left: 20%;
-    }
-
-    .search-form{
-        display: flex;
-        justify-content: center;
+    .search-box{
+        margin-right: -20px;
     }
 
     .filters{
-        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
     }
 
-    .filters h2 {
+    .buttons{
+        margin-top: 15px;
+    }
+
+    .arrange-buttons-mobile{
         display: flex;
-        margin: 0 0 10px 0;
-        width: 100%;
-        justify-content: center;
+        flex-flow: row wrap;
     }
 
-    .buttons {
-        width: 50%;
-        text-align: left;
-        margin: 0 0 10px 0;
+    .arrange-buttons{
+        display: none;
     }
-    /* END -- Header container styling */
-
+    /*End Top-Section-Styling*/
+    
     /* Activites container stylings */
     .two-containers {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .card-container {
         width: 100%;
-        margin: 0 0 50px;
+        margin: 50px 0 50px;
+        background-color: white;
+    }
+
+    .show-more{
+        font-size: large;
+    }
+
+    .stars{
+        font-size: 80%;
     }
 
     .card {
-        width: 100%;
+        width: 98%;
     }
 
     .aside {
         width: 100%;
+        border-radius: 0;
     }
 
-    .card, .aside-card {
+    .card {
         margin: 0 0 30px 0;
     }
 
-    .aside-card{
-        width: 100%;
+    .aside-cards{
+        display: flex;
+        flex-direction: column;
     }
 
-    .aside-cards{
-        flex-direction: column;
+    .aside-card{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+    }
+
+    .card-titles{
+        height: auto;
+    }
+
+    .aside-card img {
+        height: 150px;
+        border-radius: 20px 0 0 20px;
+        width: 45%;
+        min-width: 45%;
+        object-fit: cover;
+        padding: 3px;
+    }
+
+    .activities{
+        margin-top: -40px;
+    }
+
+    .activities h3{
+        margin-left: 5px;
+        margin-bottom: 15px;
     }
 
     .activity-card {
@@ -581,22 +673,26 @@ footer {
     .active-wrap .activity-card {
         width: calc(100% - 30px);
     }
-
-    .column {
-        display: flex;
-        align-items: center;
-    }
     /* END -- Activites container stylings */
 }
 
 @media(max-width: 430px){
     
     .buttons{
-        width: 80%;
+        margin-top: 15px;
     }
 
-    .column{
+    .filters{
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .buttons{
+        margin-top: 15px;
+    }
+
+    .arrange-buttons-mobile{
         display: flex;
-        align-items: baseline;
+        flex-flow: row wrap;
     }
 }
