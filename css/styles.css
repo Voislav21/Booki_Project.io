@@ -528,23 +528,25 @@ footer {
         margin-left: 55px;
     }
 
-    .nav-links ul{
+    .nav-links ul li{
         max-width: 100%;
         display: flex;
         border-bottom: solid 3px #F2F2F2;
-        padding: 0 20px 10px 20px;
+        padding-bottom: 15px;
     }
 
     .nav-links li{
-        align-items: center;
-        text-align: center;
-        width: 100%;
+        justify-content: center;
+        width: 50%; 
+    }
+
+    .nav-links ul li:hover{
+        border-bottom: solid #0065FC 3px;
+        width: 50%;
     }
 
     .nav-links a:hover{
-        text-decoration: underline #0065FC 3px;
-        text-underline-offset: 22px;
-        width: 100%;
+        text-decoration: none
     }
     
     /* END -- Header container styling */
