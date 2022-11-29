@@ -35,7 +35,7 @@ nav, main, footer {
 /* Navigation stylings */
 nav {
     display: flex;
-    padding: 40px 20px;
+    padding: 0px 20px 20px;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
@@ -43,17 +43,21 @@ nav {
 
 .nav-links ul{
     display: flex;
+    padding: 0;
 }
 
 .nav-links ul li {
+    display: flex;
     list-style: none;
-    padding: 8px 12px;
+    padding: 50px 12px;
+    border-top: 3px solid transparent;
 }
 
+.nav-links li:hover{
+    border-top: #0065FC solid 3px;
+}
 
 .nav-links a:hover{
-    text-decoration: underline #0065FC 3px;
-    text-underline-offset: -60px;
     color: #0065FC;
 }
 /* END -- Navigation stylings */
@@ -529,26 +533,20 @@ footer {
     }
 
     .nav-links ul li{
-        max-width: 100%;
+        width: 50%;
         display: flex;
+        border-top: none;
         border-bottom: solid 3px #F2F2F2;
         padding-bottom: 15px;
-    }
-
-    .nav-links li{
         justify-content: center;
-        width: 50%; 
     }
 
-    .nav-links ul li:hover{
+    .nav-links li:hover{
+        border-top: none;
         border-bottom: solid #0065FC 3px;
         width: 50%;
     }
 
-    .nav-links a:hover{
-        text-decoration: none
-    }
-    
     /* END -- Header container styling */
 
     /*Top-Section-Styling */
